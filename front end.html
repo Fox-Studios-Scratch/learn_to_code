@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Education Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coding Education Platform</h1>
+    </header>
+    <main>
+        <section id="startPage">
+            <h2>Welcome!</h2>
+            <p>Before we start, let's learn about variables.</p>
+            <p>In programming, a variable is like a container that holds a value. You can give it a name and assign a value to it.</p>
+            <p>For example, to create a variable called 'x' and assign it the value 10, you would write:</p>
+            <code>
+                <pre>var x = 10;</pre>
+            </code>
+            <p>Please input a variable below:</p>
+            <input type="text" id="variableInput">
+            <button id="startLesson">Start Lesson</button>
+        </section>
+        <section id="lesson" style="display: none;">
+            <h2>Lesson 1: Introduction to Variables</h2>
+            <p>Variables are used to store data values.</p>
+            <code>
+                <pre>var <span id="placeholderName" class="variable">variableName</span> = <span id="variableValue" class="value">10</span>;</pre>
+            </code>
+            <button id="startExercise">Start Exercise</button>
+        </section>
+        <section id="exercise" style="display: none;">
+            <h2>Exercise: Declare a variable 'name' and assign it the value 'YourName". Don't forget to end it with a ";"! </h2>
+            <input type="text" id="codeInput">
+            <button id="checkAnswer">Check Answer</button>
+            <p id="feedback"></p>
+        </section>
+        <section id="lesson2" style="display: none;">
+            <h2>Lesson 2: Introduction to Data Types</h2>
+            <p>Data types specify the type of data that can be stored in a variable.</p>
+            <code>
+                <pre>// Examples of data types
+var number = 10;
+var text = 'Hello, world!';
+var boolean = true;</pre>
+            </code>
+            <button id="startExercise2">Start Exercise</button>
+        </section>
+        <section id="exercise2" style="display: none;">
+            <h2>Exercise: Change the value of the variable 'number' to 20. Don't forget to end your code snippit with a ";"!</h2>
+            <input type="text" id="codeInput2">
+            <button id="checkAnswer2">Check Answer</button>
+            <p id="feedback2"></p>
+        </section>
+        <section id="congratulations" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You have learned a bit about variables and data types!</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
